@@ -18,7 +18,7 @@ export const Input = ({type = "text",onChange,placeholder,title})=>{
                 type={type}
                 placeholder={placeholder}
                 value={value}
-                onChange={handleChangeValue}
+                onChange={(e)=>handleChangeValue(e)}
             />
         </Container>
     )

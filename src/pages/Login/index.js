@@ -6,34 +6,54 @@ import {
     Form,
     Tilte,
     SubTitle,
-
+    Link,
+    Left,
+    Right,
+    ContImage,
+    TitleImage,
+    Text,
 } from "./styles";
-
+import LogoImage from "./logo-colum.png"
 export const Login = ({})=>{
 
     return(
         <Container>
-           <Logo>
+            <Left>
+                <Logo>
+                    <img src={LogoImage}/>
+                </Logo>
+                <Form>
+                        <Tilte>Welcome!</Tilte>
+                        <SubTitle>
+                            It is a long established fact that a reader will be 
+                            distracted by thereadable content of a page when looking 
+                            at its layout. The point of using Lorem Ipsum is that it.
+                        </SubTitle>
+                        <Input
+                            type="text"
+                            placeholder="Email"
+                        />
+                        <Input
+                            type="password"
+                            placeholder="password"
+                        />
+                        <Button/>
+                        <Button/>
+                        <Link>Create account</Link>
+                </Form>
 
-           </Logo>
-           <Form>
-                <Tilte>Welcome!</Tilte>
-                <SubTitle>
+            </Left>
+            <Right>
+                <ContImage>
+
+                </ContImage>
+                <TitleImage>Promoção de outono</TitleImage>
+                <Text>
                     It is a long established fact that a reader will be 
                     distracted by thereadable content of a page when looking 
                     at its layout. The point of using Lorem Ipsum is that it.
-                </SubTitle>
-                <Input
-                    type="text"
-                    placeholder="Email"
-                />
-                <Input
-                    type="password"
-                    placeholder="password"
-                />
-                <Button/>
-                <Button/>
-           </Form>
+                </Text>
+            </Right>
         </Container>
     )
 }
