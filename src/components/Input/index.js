@@ -1,4 +1,4 @@
-export {
+import {
     Container,
     Title,
     InputText,

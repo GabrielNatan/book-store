@@ -1,8 +1,8 @@
-export {
+import {
     Container,
 } from "./styles";
 
-export const Input = ({})=>{
+export const Login = ({})=>{
 
     return(
         <Container>
