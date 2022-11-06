@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
     Container,
     Title,
@@ -5,6 +6,7 @@ import {
 } from "./styles";
 
 export const Input = ({type = "text",onChange,placeholder,title})=>{
+    const [value,setValue] =useState('')
     function handleChangeValue(e){
         onChange(e.targe.value)
     }
