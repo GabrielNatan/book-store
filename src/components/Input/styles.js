@@ -12,9 +12,9 @@ export const Title = styled.label`
 
 export const InputText = styled.input`
     height: 60px;
-    border: 1px solid blue;
+    border: 1px solid red;
     border-radius: 10px;
     padding: 10px;
-    color: blue;
-    background-color: #FFF;
+    color: red;
+    background-color: white;
 `
